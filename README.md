@@ -24,7 +24,28 @@ Personal to do list by Angie Garcia
 - React
 - Webpack
 
+## Scripts
 
+- **`npm i`** => Install dependencies
+- **`npm start`** => Run React app in develop mode
+- **`npm run build:dll`** => Build static files from core libraries to production 
+- **`npm run build`** => Build static files from app to production 
+- **`npm test`** => Run tests
+
+## Develop
+
+To work in this project with the previous scripts execute the following instructions
+
+- Install dependencies
+- Run React app in develop mode
+
+## Deploy
+
+To get production static files with the previous scripts execute the following instructions.
+
+- Install dependencies
+- Build static files from core libraries to production 
+- Build static files from app to production 
 
 ## Author
 

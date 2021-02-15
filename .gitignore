@@ -2,5 +2,5 @@
 node_modules
 
 ## react
- dist
- modules-manifest.json
+dist
+modules-manifest.json

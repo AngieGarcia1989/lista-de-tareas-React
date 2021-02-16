@@ -1,0 +1,42 @@
+{
+  "name": "lista-de-tareas",
+  "version": "0.0.1",
+  "description": "Personal to do list by Angie Garcia",
+  "main": "index.js",
+  "scripts": {
+    "build:dll": "webpack --config webpack.config.js",
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack serve --config webpack.dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngieGarcia1989/lista-de-tareas-React.git"
+  },
+  "keywords": [
+    "react",
+    "webpack"
+  ],
+  "author": "angie garcia <angiegarciaoficial@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AngieGarcia1989/lista-de-tareas-React/issues"
+  },
+  "homepage": "https://github.com/AngieGarcia1989/lista-de-tareas-React#readme",
+  "dependencies": {
+    "@babel/runtime": "7.12.13",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.16",
+    "@babel/plugin-transform-runtime": "7.12.15",
+    "@babel/preset-env": "7.12.16",
+    "@babel/preset-react": "7.12.13",
+    "babel-loader": "8.2.2",
+    "html-webpack-plugin": "5.1.0",
+    "webpack": "5.21.2",
+    "webpack-cli": "4.5.0",
+    "webpack-dev-server": "3.11.2"
+  }
+}

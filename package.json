@@ -43,9 +43,9 @@
     "eslint-plugin-react": "7.22.0",
     "eslint-plugin-react-hooks": "4.2.0",
     "html-webpack-plugin": "5.1.0",
+    "husky": "5.0.9",
     "webpack": "5.21.2",
     "webpack-cli": "4.5.0",
     "webpack-dev-server": "3.11.2"
   }
 }
-

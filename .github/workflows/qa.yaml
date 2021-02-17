@@ -1,0 +1,29 @@
+name: QA
+
+on:
+  push:
+    branches:
+      - staging
+
+jobs:
+  deploy-to-staging:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Install
+        run: npm i
+      - name: pre-Build
+        run: npm run build:dll
+      - name: Build
+        run: npm run build
+      - name: Deploy to S3
+        uses: jakejarvis/s3-sync-action@master
+        with:
+          args: --acl public-read --delete
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_STAGING_BUCKET_NAME }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_STAGING_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_STAGING_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_STAGING_REGION }}
+          SOURCE_DIR: 'dist'

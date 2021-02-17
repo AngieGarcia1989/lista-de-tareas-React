@@ -2,6 +2,8 @@
 
 <p align="center">
   <img src="https://github.com/AngieGarcia1989/lista-de-tareas-React/workflows/CI/badge.svg" alt="CI badge">
+  <img src="https://github.com/AngieGarcia1989/lista-de-tareas-React/workflows/CD/badge.svg" alt="CD badge">
+  <img src="https://github.com/AngieGarcia1989/lista-de-tareas-React/workflows/QA/badge.svg" alt="QA badge">
   <img src="https://img.shields.io/github/commit-activity/m/AngieGarcia1989/lista-de-tareas-React?logo=github" alt="commit activity badge">
   <img src="https://img.shields.io/github/last-commit/AngieGarcia1989/lista-de-tareas-React?logo=github" alt="last commit badge">
 </p>
@@ -43,6 +45,10 @@ To work in this project with the previous scripts execute the following instruct
 - Run React app in develop mode
 
 ## Deploy
+
+To deploy app in staging make a pull request to the staging branch.
+
+To deploy app in production make a pull request to the main branch.
 
 To get production static files with the previous scripts execute the following instructions.
 
